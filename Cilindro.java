@@ -3,7 +3,6 @@ public class Cilindro extends Circulo{
 
     public Cilindro(double radio, double altura) {
         super(radio);
-        this.altura = altura;
         if(altura>0.0){
             this.altura = altura;
         }
@@ -18,5 +17,10 @@ public class Cilindro extends Circulo{
 
     public double getVolumen(){
         return this.altura*this.getArea();
+    }
+
+    @Override
+    public double getArea(){
+        return 2*Math.PI*this.radio*this.radio + (2*Math.PI*this.radio*this.altura);
     }
 }

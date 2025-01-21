@@ -46,14 +46,16 @@ public class Main {
 
         Circulo circulo = new Circulo(-1.0);
         System.out.println(circulo.getRadio());
-        Circulo circulo2 = new Circulo (3.4);
+        Circulo circulo2 = new Circulo (5.0);
         System.out.println(circulo2.getRadio());
         System.out.println(circulo2.getArea());
 
         Cilindro cilindro = new Cilindro(-3.0,2.3);
         System.out.println(cilindro.getAltura());
         System.out.println(cilindro.getRadio());
-        Cilindro cilindro2 = new Cilindro (2.5, 5.6);
+        Cilindro cilindro2 = new Cilindro (5.0, 10.0);
+        System.out.println(cilindro2.getAltura());
+        System.out.println(cilindro2.getRadio());
         System.out.println(cilindro2.getArea());
         System.out.println(cilindro2.getVolumen());
     }
